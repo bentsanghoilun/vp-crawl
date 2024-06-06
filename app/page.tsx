@@ -51,7 +51,7 @@ export default function Home() {
       console.error("Error", error);
       loading.setFalse();
     }
-  }, [url]);
+  }, [url, loading]);
 
   const Textarea = styled(BaseTextareaAutosize)(
     ({ theme }) => `
